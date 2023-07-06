@@ -149,3 +149,25 @@ refactor: Refatora função de ordenação
 
 Simplificada a implementação da função de ordenação, melhorando o desempenho e a legibilidade do código
 ```
+
+## Contatos
+
+Para entrar em contato conosco, utilize as seguintes informações:
+
+📧 comercial@ejuvv.com
+
+📞 +55 27 3421-2140
+
+Além disso, você também pode nos encontrar nas redes sociais:
+
+<a href="https://www.instagram.com/ejuvv" target="_blank">
+    <img src="https://images.vexels.com/media/users/3/137198/isolated/lists/07f0d7b69ef071571e4ada2f4d6a053a-icone-do-instagram-colorido.png" alt="Instagram" width="30" height="30">
+</a>
+
+<a href="https://www.linkedin.com/company/ejuvv/" target="_blank">
+    <img src="https://logospng.org/download/linkedin/logo-linkedin-icon-256.png" alt="LinkedIn" width="30" height="30">
+</a>
+
+Ficaremos felizes em receber suas dúvidas, sugestões, críticas ou qualquer outra mensagem relacionada ao projeto.
+
+Sinta-se à vontade para nos contatar e responderemos o mais breve possível.
