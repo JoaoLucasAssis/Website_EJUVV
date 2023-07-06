@@ -60,3 +60,32 @@ Lembre-se de remover a `feature` após mesclar com a branch `develop`:
 ```git
 git branch -d feature/<nome_descritivo>
 ```
+
+## Branches de Lançamento
+Uma vez que a branch `develop` adquiriu recursos suficientes para um lançamento, é criado uma branch `release`, a partir da `develop`, para ser lançada para a branch `main`.
+
+Cada branch `release` deve ser mesclada a branch `main` com um número de versão.
+
+Caso haja alguma alteração, a `release` também deve ser mesclada com a `develop`.
+
+Para criar uma `release`, utilize o prefixo **release/** seguido pelo **número da versão** correspondente:
+
+```git
+git checkout develop
+git checkout -b release/<versao>
+```
+
+Para mesclar a `release` na branch `main`:
+
+```git
+git checkout main
+git merge release/<versao>
+```
+
+Lembre-se de remover a `release`:
+
+> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
+
+```git
+git branch -d release/<versao>
+```
