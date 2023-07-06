@@ -44,7 +44,7 @@ O Git Workflow é uma recomendação de como usar o Git para realizar o trabalho
 
 Há vários Git Workflows, nosso projeto utilizará o Git Flow.
 
-> obs: Para mais informações detalahas sobre o Git Workflow: [clicar aqui](https://github.com/JoaoLucasAssis/Website_EJUVV/blob/main/git_workflow.md).
+> obs: Para mais informações detalahas sobre o Git Workflow: [clicar aqui](https://github.com/JoaoLucasAssis/Website_EJUVV/blob/develop/git_workflow.md).
 
 ### Branches Principais
 
@@ -90,7 +90,7 @@ Elas devem ter o nome iniciado por **"hotfix/"** seguido por uma **versão**.
 
 Essas branches são criadas a partir da branch `main` e, após finalizadas, são removidas após serem mescladas com a branch `main` e `develop`.
 
-> obs: Para mais informações detalahas sobre o Git Workflow: [clicar aqui](https://github.com/JoaoLucasAssis/Website_EJUVV/blob/main/git_workflow.md).
+> obs: Para mais informações detalahas sobre o Git Workflow: [clicar aqui](https://github.com/JoaoLucasAssis/Website_EJUVV/blob/develop/git_workflow.md).
 
 ## Boas Práticas de Commits
 
