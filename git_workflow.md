@@ -114,3 +114,36 @@ Lembre-se de remover a `bugfix`:
 ```git
 git branch -d bugfix/<nome_descritivo>
 ```
+
+## Branches de Manutenção
+As branches de `hotfix` são usadas para fazer correções com rapidez no código base.
+
+Esta é a única branch que deve ser criada direto da ramificação `main`.
+
+Assim que a correção é concluída, deve-se mesclar a `hotfix` tanto com a branch `main` quanto com a `develop`.
+
+> obs: Caso exista uma release atual, o merge deve ser feito nela, e então, posteriormente, será feito o merge com a develop
+
+Para criar uma `hotfix`, utilize o prefixo **hotfix/** seguido pelo **número da versão** correspondente:
+
+```git
+git checkout main
+git checkout -b hotfix/<versao>
+```
+
+Para mesclar a `hotfix` na branch `main` e na `develop`:
+
+```git
+git checkout main
+git merge hotfix/<versao>
+git checkout develop
+git merge hotfix/<versao>
+```
+
+Lembre-se de remover a `hotfix`:
+
+> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
+
+```git
+git branch -d hotfix/<versao>
+```
