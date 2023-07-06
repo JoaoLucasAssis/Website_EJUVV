@@ -89,3 +89,28 @@ Lembre-se de remover a `release`:
 ```git
 git branch -d release/<versao>
 ```
+
+## Branches de Correção
+A branch `bugfix` é criada a partir da branch `release` para correções encontradas no momento da validação.
+
+Para criar uma `bugfix`, utilize o prefixo **bugfix/** seguido de um **nome descritivo** da correção:
+
+```git
+git checkout release
+git checkout -b bugfix/<nome_descritivo>
+```
+
+Para mesclar a `bugfix` na branch `release`:
+
+```git
+git checkout release
+git merge bugfix/<nome_descritivo>
+```
+
+Lembre-se de remover a `bugfix`:
+
+> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
+
+```git
+git branch -d bugfix/<nome_descritivo>
+```
