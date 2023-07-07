@@ -85,3 +85,27 @@ Para criar uma `hotfix`, utilize o prefixo **hotfix/** seguido pelo **número da
 git checkout main
 git checkout -b hotfix/<versao>
 ```
+
+## Pull Request e Mesclagem
+
+Depois de concluir as alterações em uma branch, ela deve ser enviada para o **repositório remoto**.
+
+```git
+git push origin <nome_da_branch>
+```
+
+> obs: Lembre-se de estar na branch desejada para executar esse comando
+
+No repositório remoto, deverá ser criado um **pull request** entre essa branch e a branch `develop`.
+
+* Abra o GitHub neste repositório.
+
+* Clique no botão pull request para criar uma nova requisição.
+
+* Escolha como branch base a branch `develop` e para a branch de comparação escolha a branch que deseja mesclar.
+
+* Preencha corretamente as informações de acordo com a documentação de pull request.
+
+* Clique em "Create pull request" para iniciar o processo de revisão.
+
+Após as revisões e testes, haverá a **mesclagem** entre as branches e, por fim, a **exclusão** da branch de comparação.
