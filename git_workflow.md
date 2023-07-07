@@ -46,21 +46,6 @@ git checkout develop
 git checkout -b feature/<nome_descritivo>
 ```
 
-Para mesclar a `feature` na branch de desenvolvimento:
-
-```git
-git checkout develop
-git merge feature/<nome_descritivo>
-```
-
-Lembre-se de remover a `feature` após mesclar com a branch `develop`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d feature/<nome_descritivo>
-```
-
 ## Branches de Lançamento
 Uma vez que a branch `develop` adquiriu recursos suficientes para um lançamento, é criado uma branch `release`, a partir da `develop`, para ser lançada para a branch `main`.
 
@@ -75,21 +60,6 @@ git checkout develop
 git checkout -b release/<versao>
 ```
 
-Para mesclar a `release` na branch `main`:
-
-```git
-git checkout main
-git merge release/<versao>
-```
-
-Lembre-se de remover a `release`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d release/<versao>
-```
-
 ## Branches de Correção
 A branch `bugfix` é criada a partir da branch `release` para correções encontradas no momento da validação.
 
@@ -98,21 +68,6 @@ Para criar uma `bugfix`, utilize o prefixo **bugfix/** seguido de um **nome desc
 ```git
 git checkout release
 git checkout -b bugfix/<nome_descritivo>
-```
-
-Para mesclar a `bugfix` na branch `release`:
-
-```git
-git checkout release
-git merge bugfix/<nome_descritivo>
-```
-
-Lembre-se de remover a `bugfix`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d bugfix/<nome_descritivo>
 ```
 
 ## Branches de Manutenção
@@ -129,21 +84,4 @@ Para criar uma `hotfix`, utilize o prefixo **hotfix/** seguido pelo **número da
 ```git
 git checkout main
 git checkout -b hotfix/<versao>
-```
-
-Para mesclar a `hotfix` na branch `main` e na `develop`:
-
-```git
-git checkout main
-git merge hotfix/<versao>
-git checkout develop
-git merge hotfix/<versao>
-```
-
-Lembre-se de remover a `hotfix`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d hotfix/<versao>
 ```
