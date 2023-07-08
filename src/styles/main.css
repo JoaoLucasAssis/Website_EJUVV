@@ -1,0 +1,40 @@
+/*-*-*-*-*-*-*-*-*-* Reset *-*-*-*-*-*-*-*-*-*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-*-*-*-*-*-*-*-*-* Reusable Components  *-*-*-*-*-*-*-*-*-*/
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --color-primary: #151618;
+    --color-primary-m-light: rgba(21, 22, 24, 0.5);
+  
+    --color-secondary: #202125;;
+  
+    --color-tertiary: #2F3238;
+  
+    --color-highlight: #282A6B;
+
+    --color-text-dark: #949495;
+
+    --color-text-light: #f6eedf;
+
+    --transition-duration: 0.4s;
+
+    --font-size-title: calc(2rem + 2vw);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
