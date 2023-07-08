@@ -46,21 +46,6 @@ git checkout develop
 git checkout -b feature/<nome_descritivo>
 ```
 
-Para mesclar a `feature` na branch de desenvolvimento:
-
-```git
-git checkout develop
-git merge feature/<nome_descritivo>
-```
-
-Lembre-se de remover a `feature` após mesclar com a branch `develop`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d feature/<nome_descritivo>
-```
-
 ## Branches de Lançamento
 Uma vez que a branch `develop` adquiriu recursos suficientes para um lançamento, é criado uma branch `release`, a partir da `develop`, para ser lançada para a branch `main`.
 
@@ -75,21 +60,6 @@ git checkout develop
 git checkout -b release/<versao>
 ```
 
-Para mesclar a `release` na branch `main`:
-
-```git
-git checkout main
-git merge release/<versao>
-```
-
-Lembre-se de remover a `release`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d release/<versao>
-```
-
 ## Branches de Correção
 A branch `bugfix` é criada a partir da branch `release` para correções encontradas no momento da validação.
 
@@ -98,21 +68,6 @@ Para criar uma `bugfix`, utilize o prefixo **bugfix/** seguido de um **nome desc
 ```git
 git checkout release
 git checkout -b bugfix/<nome_descritivo>
-```
-
-Para mesclar a `bugfix` na branch `release`:
-
-```git
-git checkout release
-git merge bugfix/<nome_descritivo>
-```
-
-Lembre-se de remover a `bugfix`:
-
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
-
-```git
-git branch -d bugfix/<nome_descritivo>
 ```
 
 ## Branches de Manutenção
@@ -131,19 +86,26 @@ git checkout main
 git checkout -b hotfix/<versao>
 ```
 
-Para mesclar a `hotfix` na branch `main` e na `develop`:
+## Pull Request e Mesclagem
+
+Depois de concluir as alterações em uma branch, ela deve ser enviada para o **repositório remoto**.
 
 ```git
-git checkout main
-git merge hotfix/<versao>
-git checkout develop
-git merge hotfix/<versao>
+git push origin <nome_da_branch>
 ```
 
-Lembre-se de remover a `hotfix`:
+> obs: Lembre-se de estar na branch desejada para executar esse comando
 
-> obs: Certifique-se de estar em uma branch diferente daquela que deseja remover
+No repositório remoto, deverá ser criado um **pull request** entre essa branch e a branch `develop`.
 
-```git
-git branch -d hotfix/<versao>
-```
+* Abra o GitHub neste repositório.
+
+* Clique no botão pull request para criar uma nova requisição.
+
+* Escolha como branch base a branch `develop` e para a branch de comparação escolha a branch que deseja mesclar.
+
+* Preencha corretamente as informações de acordo com a documentação de pull request.
+
+* Clique em "Create pull request" para iniciar o processo de revisão.
+
+Após as revisões e testes, haverá a **mesclagem** entre as branches e, por fim, a **exclusão** da branch de comparação.
