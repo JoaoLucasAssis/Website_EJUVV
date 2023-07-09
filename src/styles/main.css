@@ -11,22 +11,16 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px */
   
-    --color-primary: #202125;
-    --color-primary-m-light: rgba(32, 33, 37, 0.7);
+    --color-primary: #282A6B;
+    --color-primary-m-light: rgba(40, 42, 107, 0.7);
   
-    --color-secondary: #2F3238;
+    --color-secondary: #2e3a89;
   
-    --color-highlight: #282A6B;
+    --color-highlight: #e7b036;
 
-    --color-text-dark: #949495;
-
-    --color-text-light: #f6eedf;
-
-    --color-copyright-section: #151618;
+    --color-text-dark: #b7b7b7;
 
     --transition-duration: 0.4s;
-
-    --font-size-title: calc(2rem + 2vw);
 }
 
 a:link,
