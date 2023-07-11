@@ -2,8 +2,10 @@
 const divHamburger = document.querySelector("div.header__main-nav__hamburger");
 const divHamburgerMenu = document.querySelector("div.header__hamburger-menu");
 
-// Eventt
+// Events
 divHamburger.addEventListener('click', () => {
-    divHamburger.classList.toggle("active");
-    divHamburgerMenu.classList.toggle("active");
+    if (window.innerWidth <= 800) {
+        divHamburger.classList.toggle("active");
+        divHamburgerMenu.classList.toggle("active");
+    }
 });
