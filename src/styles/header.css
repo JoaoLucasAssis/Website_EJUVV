@@ -111,6 +111,8 @@ header#header {
     left: 0;
     width: 100%;
 
+    display: none;
+
     transform: translateY(-150%);
     transition: all var(--transition-duration);
     background-color: var(--color-primary);
@@ -143,13 +145,15 @@ header#header {
         display: none;
     }
 
-    .header__main-nav__hamburger {
+    .header__main-nav__hamburger,
+    .header__hamburger-menu {
         display: flex;
     }
 }
 
 @media screen and (max-width: 500px) {
-    header#header {
+    header#header,
+    .header__hamburger-menu--list {
         padding: 2rem;
     }
 }
