@@ -141,6 +141,7 @@ header#header {
     header#header {
         background-color: var(--color-primary);
     }
+
     .header__main-nav--list {
         display: none;
     }
@@ -152,6 +153,7 @@ header#header {
 }
 
 @media screen and (max-width: 500px) {
+
     header#header,
     .header__hamburger-menu--list {
         padding: 2rem;
