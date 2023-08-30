@@ -6,10 +6,10 @@ const header = document.querySelector("header#header");
 
 // Events
 divHamburger.addEventListener("click", () => {
-    if (window.innerWidth <= 800) {
-        divHamburger.classList.toggle("active");
-        divHamburgerMenu.classList.toggle("active");
-    }
+  if (window.innerWidth <= 800) {
+    divHamburger.classList.toggle("active");
+    divHamburgerMenu.classList.toggle("active");
+  }
 });
 
 window.addEventListener("scroll", () => {
@@ -17,7 +17,10 @@ window.addEventListener("scroll", () => {
     header.style.backgroundColor = "#282A6B";
     header.style.boxShadow = "-0.1rem 0 1rem rgba(0, 0, 0, 0.5)";
   } else {
-    header.style.backgroundColor = "transparent";
+    if (window.innerWidth > 800) {
+      header.style.backgroundColor = "transparent";
+    }
+
     header.style.boxShadow = "none";
   }
 });
