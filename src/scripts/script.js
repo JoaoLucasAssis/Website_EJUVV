@@ -13,9 +13,11 @@ divHamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 0) {
     header.style.backgroundColor = "#282A6B";
+    header.style.boxShadow = "-0.1rem 0 1rem rgba(0, 0, 0, 0.5)";
   } else {
     header.style.backgroundColor = "transparent";
+    header.style.boxShadow = "none";
   }
 });
