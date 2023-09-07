@@ -6,7 +6,7 @@ const header = document.querySelector("header#header");
 
 // Events
 divHamburger.addEventListener("click", () => {
-  if (window.innerWidth <= 800) {
+  if (window.innerWidth <= 880) {
     divHamburger.classList.toggle("active");
     divHamburgerMenu.classList.toggle("active");
   }
@@ -15,12 +15,9 @@ divHamburger.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     header.style.backgroundColor = "#282A6B";
-    header.style.boxShadow = "-0.1rem 0 1rem rgba(0, 0, 0, 0.5)";
+    header.style.boxShadow = "-0.1rem 0 1rem rgba(0, 0, 0, 0.25)";
   } else {
-    if (window.innerWidth > 800) {
-      header.style.backgroundColor = "transparent";
-    }
-
+    header.style.backgroundColor = "transparent";
     header.style.boxShadow = "none";
   }
 });
