@@ -3,11 +3,12 @@ section#hero {
     height: 100vh;
 
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: end;
 
     position: relative;
 
-    padding: 2rem 8rem;
+    padding: 8vh 0;
     background: url("../assets/images/company.jpg") center/cover no-repeat;
 }
 
@@ -26,12 +27,13 @@ section#hero {
 
 /*-*-*-* Content *-*-*-*/
 .hero__content {
-    height: 80vh;
+    max-width: 110rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: start;
+    /* background-color: red; */
 
     z-index: 2;
 }
@@ -39,6 +41,7 @@ section#hero {
 .hero__content>h1 {
     font-size: calc(4rem + 4vw);
     text-transform: capitalize;
+    margin-bottom: 3rem;
 
     color: #fff;
 }
@@ -47,6 +50,8 @@ section#hero {
     width: 80%;
 
     font-size: calc(1rem + 1vw);
+    text-align: justify;
+    margin-bottom: 3rem;
 
     color: #fff;
 }
@@ -60,9 +65,18 @@ section#hero {
 }
 
 /*-*-*-*-*-*-*-*-*-* Media Queries  *-*-*-*-*-*-*-*-*-*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
+    .hero__content {
+        max-width: 88rem;
+    }
+}
 
+@media screen and (max-width: 880px) {
     section#hero {
+        height: 80vh;
+    }
+
+    .hero__content {
         padding: 2rem;
     }
 }

@@ -4,7 +4,7 @@ section#clients {
     padding: 8vh 0;
 }
 
-.clients__content--title {
+.clients__content>h2 {
     position: relative;
 
     font-size: calc(4rem + 2vw);
@@ -15,7 +15,7 @@ section#clients {
     color: #000;
 }
 
-.clients__content--title::after {
+.clients__content>h2::after {
     content: "";
     position: absolute;
     bottom: -3rem;
@@ -32,7 +32,7 @@ section#clients {
     max-width: 110rem;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
     margin: 0 auto;
 }
@@ -48,7 +48,9 @@ section#clients {
 .clients__content--table__img-container>img {
     width: 100%;
     height: 100%;
+
     object-fit: contain;
+
     transform: scale(0.8);
     transition: all var(--transition-duration);
 }
@@ -64,14 +66,7 @@ section#clients {
 }
 
 @media screen and (max-width: 880px) {
-    .clients__content {
+    section#clients {
         padding: 2rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .clients__content--table {
-        table-layout: auto;
-        width: auto;
     }
 }

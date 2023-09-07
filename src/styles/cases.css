@@ -17,7 +17,7 @@ section#cases {
     margin: 0 auto;
 }
 
-.cases__content--title {
+.cases__content>h2 {
     position: relative;
 
     font-size: calc(4rem + 2vw);
@@ -28,7 +28,7 @@ section#cases {
     color: #fff;
 }
 
-.cases__content--title::after {
+.cases__content>h2::after {
     content: "";
     position: absolute;
     bottom: -3rem;
@@ -45,7 +45,7 @@ section#cases {
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
     
 
@@ -57,7 +57,7 @@ section#cases {
     text-align: center;
 
     background-color: var(--color-secondary);
-    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5);
+    box-shadow: -0.1rem 0 1rem rgba(0, 0, 0, 0.1);
     color: #fff;
 }
 
@@ -88,7 +88,7 @@ section#cases {
 }
 
 @media screen and (max-width: 880px) {
-    .cases__content {
+    section#cases {
         padding: 2rem;
     }
 }
