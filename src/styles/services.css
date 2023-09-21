@@ -82,10 +82,8 @@ section#services {
 
     padding: 2rem;
     background-color: var(--color-primary);
-    box-shadow: -0.1rem 0 1rem rgba(0, 0, 0, 0.1);
     text-align: center;
 
-    overflow: hidden;
     transition: all var(--transition-duration);
 }
 
@@ -156,11 +154,11 @@ section#services {
 .services__content--carousel__arrow.left-arrow {
     display: none;
 
-    left: 0;
+    left: 0rem;
 }
 
 .services__content--carousel__arrow.right-arrow {
-    right: 0;
+    right: 0rem;
 }
 
 @media screen and (max-width: 1100px) {
