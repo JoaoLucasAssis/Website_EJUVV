@@ -6,6 +6,8 @@ O Website da EJUVV é um projeto que tem como objetivo fornecer uma presença on
 
 O projeto visa converter visitantes em clientes em potencial, fornecendo uma plataforma para apresentação de serviços e informações relevantes, facilitando também a comunicação com os usuários.
 
+Comecei esse projeto durante minha participação como colaborador voluntário na Empresa Júnior Universidade Vila Velha. Hoje em dia, a organização utiliza outra landing page como presença online. Para visualizar a nossa página da Empresa Júnior Universidade Vila Velha, [clique aqui](https://www.ejuvv.com/).
+
 ## Instalação
 
 Para começar, clone o repositório do projeto em seu ambiente local. Siga a etapa abaixo:
